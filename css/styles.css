@@ -22,7 +22,7 @@
   font-style: normal;
 }
 
-button, .menu__link {
+button, .menu__link, .about__text, .about__link {
   font-family: "Lato Regular", sans-serif;
   font-size: 14px;
 }
@@ -35,6 +35,11 @@ button, .menu__link {
 .offer__description {
   font-family: "Lato Semibold", sans-serif;
   font-size: 24px;
+}
+
+.about__title {
+  font-family: "Lato Semibold", sans-serif;
+  font-size: 36px;
 }
 
 .navbar__brand-text {
@@ -83,6 +88,10 @@ button {
   background-color: transparent;
   border-radius: 6px;
   outline: none;
+}
+
+main * {
+  color: #000000;
 }
 
 .container {
@@ -203,5 +212,58 @@ button {
 
 .offer__button:hover {
   background-color: #e4e4e4;
+}
+
+.about {
+  margin-top: 94px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about__left, .about__right {
+  width: 50%;
+}
+
+.about__left-inner, .about__right-inner {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.about__right img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.about__title {
+  line-height: 1.2;
+  margin-top: 40px;
+}
+
+.about__text {
+  margin-top: 42px;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+.about__link {
+  color: #ed4c5c;
+  margin-top: 24px;
+}
+
+.about__play-btn {
+  background: url("../../icons/play.svg");
+  height: 66px;
+  width: 66px;
+  position: absolute;
+  top: 50%;
+  margin: -33px;
 }
 /*# sourceMappingURL=styles.css.map */
