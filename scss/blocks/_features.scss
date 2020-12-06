@@ -1,0 +1,55 @@
+.features {
+    margin-top: 115px;
+    background-color: #fafafa;
+    padding: 25px 0 230px;
+    &__title {
+        text-align: center;
+        display: block;
+        @extend %semi-36;
+        margin-bottom: 65px;
+    }
+    &__cards {
+        display: flex;
+    }
+    &__card {
+        width: 33.333333%;
+        padding: 0 15px;
+        position: relative;
+        text-align: center;
+        &:first-child {
+            padding-left: 0;
+        }
+        &:last-child {
+            padding-right: 0;
+        }
+        &-header {
+            img {
+                width: 100%;
+                height: 250px;
+                border-radius: 8px;
+                object-fit: cover;
+            }
+        }
+        &-body {
+            position: absolute;
+            top: 60%;
+            margin: 0 28px;
+            padding: 32px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 5px 30px rgba(#000000, 0.1);
+        }
+        &-title {
+            @extend %bold-18;
+        }
+        &-text {
+            @extend %regular-12;
+            margin-top: 16px;
+            margin-bottom: 26px;
+        }
+        &-link {
+            color: #ed4c5c;
+            @extend %bold-12;
+        }
+    }
+}

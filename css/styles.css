@@ -22,6 +22,11 @@
   font-style: normal;
 }
 
+.features__card-text {
+  font-family: "Lato Regular", sans-serif;
+  font-size: 12px;
+}
+
 button, .menu__link, .about__text, .about__link {
   font-family: "Lato Regular", sans-serif;
   font-size: 14px;
@@ -37,12 +42,17 @@ button, .menu__link, .about__text, .about__link {
   font-size: 24px;
 }
 
-.about__title {
+.about__title, .features__title {
   font-family: "Lato Semibold", sans-serif;
   font-size: 36px;
 }
 
-.navbar__brand-text {
+.features__card-link {
+  font-family: "Lato Bold", sans-serif;
+  font-size: 12px;
+}
+
+.navbar__brand-text, .features__card-title {
   font-family: "Lato Bold", sans-serif;
   font-size: 18px;
 }
@@ -266,5 +276,66 @@ main * {
   position: absolute;
   top: 50%;
   margin: -33px;
+}
+
+.features {
+  margin-top: 115px;
+  background-color: #fafafa;
+  padding: 25px 0 230px;
+}
+
+.features__title {
+  text-align: center;
+  display: block;
+  margin-bottom: 65px;
+}
+
+.features__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.features__card {
+  width: 33.333333%;
+  padding: 0 15px;
+  position: relative;
+  text-align: center;
+}
+
+.features__card:first-child {
+  padding-left: 0;
+}
+
+.features__card:last-child {
+  padding-right: 0;
+}
+
+.features__card-header img {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.features__card-body {
+  position: absolute;
+  top: 60%;
+  margin: 0 28px;
+  padding: 32px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.features__card-text {
+  margin-top: 16px;
+  margin-bottom: 26px;
+}
+
+.features__card-link {
+  color: #ed4c5c;
 }
 /*# sourceMappingURL=styles.css.map */
