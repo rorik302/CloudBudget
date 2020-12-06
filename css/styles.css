@@ -27,7 +27,7 @@
   font-size: 12px;
 }
 
-button, .menu__link, .about__text, .about__link {
+button, .menu__link, .about__text, .about__link, .benefits__description {
   font-family: "Lato Regular", sans-serif;
   font-size: 14px;
 }
@@ -42,7 +42,7 @@ button, .menu__link, .about__text, .about__link {
   font-size: 24px;
 }
 
-.about__title, .features__title, .technology__title {
+.about__title, .features__title, .technology__title, .benefits__title {
   font-family: "Lato Semibold", sans-serif;
   font-size: 36px;
 }
@@ -399,5 +399,60 @@ main * {
 .technology__card-text {
   padding: 0 32px;
   line-height: 1.2;
+}
+
+.benefits {
+  padding: 95px 0;
+  background-color: #ed4c5c;
+}
+
+.benefits * {
+  color: #ffffff;
+}
+
+.benefits__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.benefits__left {
+  padding-right: 15px;
+  width: 42%;
+}
+
+.benefits__right {
+  padding-left: 15px;
+  width: 58%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.benefits__title {
+  line-height: 1.2;
+  margin-top: 30px;
+}
+
+.benefits__description {
+  text-align: justify;
+  line-height: 1.4;
+  margin: 40px 0;
+}
+
+.benefits__systems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.benefits__systems img {
+  margin-right: 26px;
 }
 /*# sourceMappingURL=styles.css.map */

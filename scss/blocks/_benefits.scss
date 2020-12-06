@@ -1,0 +1,38 @@
+.benefits {
+    * {
+        color: #ffffff;
+    }
+    padding: 95px 0;
+    background-color: #ed4c5c;
+    &__inner {
+        display: flex;
+    }
+    &__left {
+        padding-right: 15px;
+        width: 42%;
+    }
+    &__right {
+        padding-left: 15px;
+        width: 58%;
+        display: flex;
+        justify-content: center;
+    }
+    &__title {
+        @extend %semi-36;
+        line-height: 1.2;
+        margin-top: 30px;
+    }
+    &__description {
+        @extend %regular-14;
+        text-align: justify;
+        line-height: 1.4;
+        margin: 40px 0;
+    }
+    &__systems {
+        display: flex;
+        align-items: center;
+        img {
+            margin-right: 26px;
+        }
+    }
+}
