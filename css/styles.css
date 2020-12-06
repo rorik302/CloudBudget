@@ -206,12 +206,13 @@ main * {
 .offer__button {
   background-color: #ffffff;
   color: #ed4c5c;
-  border: none;
+  border: 3px solid #ffffff;
   padding: 16px 52px;
 }
 
 .offer__button:hover {
-  background-color: #e4e4e4;
+  background-color: transparent;
+  color: #ffffff;
 }
 
 .about {

@@ -38,10 +38,11 @@
         background-color: #ffffff;
         color: #ed4c5c;
         @extend %semi-14;
-        border: none;
+        border: 3px solid #ffffff;
         padding: 16px 52px;
         &:hover {
-            background-color: #e4e4e4;
+            background-color: transparent;
+            color: #ffffff;
         }
     }
 }
