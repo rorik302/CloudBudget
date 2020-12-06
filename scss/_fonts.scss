@@ -28,9 +28,35 @@
     font-style: normal;
 }
 
-@mixin bold {
-    font-family: "Lato Bold";
+%regular {
+    &-14 {
+        font-family: "Lato Regular", sans-serif;
+        font-size: 14px;
+    }
+}
+
+%semi {
+    &-14 {
+        font-family: "Lato Semibold", sans-serif;
+        font-size: 14px;
+    }
+    &-24 {
+        font-family: "Lato Semibold", sans-serif;
+        font-size: 24px;
+    }
+}
+
+%bold {
     &-12 {
+        font-family: "Lato Bold", sans-serif;
         font-size: 12px;
+    }
+    &-18 {
+        font-family: "Lato Bold", sans-serif;
+        font-size: 18px;
+    }
+    &-72 {
+        font-family: "Lato Bold", sans-serif;
+        font-size: 72px;
     }
 }

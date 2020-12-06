@@ -1,0 +1,47 @@
+.navbar {
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+    padding-top: 50px;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__brand {
+        display: flex;
+        align-items: center;
+        &-text {
+            text-transform: uppercase;
+            @extend %bold-18;
+            margin-left: 10px;
+            padding-top: 3px;
+        }
+    }
+    &__button {
+        padding: 12px 28px;
+        border: 2px solid #ffffff;
+        &:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+    }
+}
+
+.language {
+    display: inline-flex;
+    align-items: center;
+    border: none;
+    &__text {
+        padding: 0 12px;
+    }
+}
+
+.menu {
+    margin: 0 100px;
+    &__link {
+        @extend %regular-14;
+        text-transform: uppercase;
+        padding: 0 10px;
+    }
+}
