@@ -1,0 +1,46 @@
+.technology {
+    padding: 63px 0 105px 0;
+    &__title {
+        text-align: center;
+        @extend %semi-36;
+        margin-bottom: 50px;
+    }
+    &__cards {
+        display: flex;
+    }
+    &__card {
+        width: 25%;
+        text-align: center;
+        padding: 0 15px;
+        &:first-child {
+            padding-left: 0;
+        }
+        &:last-child {
+            padding-right: 0;
+        }
+        &-header {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            span {
+                @extend %bold-100;
+                color: rgba(#000000, 0.08);
+            }
+            img {
+                position: absolute;
+                bottom: 0;
+            }
+        }
+        &-body {
+        }
+        &-title {
+            @extend %bold-18;
+            margin: 14px 0 10px;
+        }
+        &-text {
+            @extend %regular-12;
+            padding: 0 32px;
+            line-height: 1.2;
+        }
+    }
+}
