@@ -1,0 +1,63 @@
+.footer {
+    * {
+        color: #101010;
+        font-style: normal;
+    }
+    padding: 0 85px;
+    background-color: #fafafa;
+    &__inner {
+        padding: 85px 0;
+    }
+    &__cards {
+        display: flex;
+        margin-bottom: 90px;
+    }
+    &__card {
+        width: 25%;
+        padding: 0 15px;
+        &:first-child {
+            padding-left: 0;
+        }
+        &:last-child {
+            padding-right: 0;
+        }
+        &-header {
+            padding-bottom: 33px;
+        }
+        &-title {
+            @extend %bold-18;
+        }
+        &-body {
+            @extend %regular-12;
+            address {
+                line-height: 1.5;
+            }
+        }
+    }
+    &__services {
+        display: flex;
+        flex-direction: column;
+    }
+    &__link {
+        text-transform: capitalize;
+        line-height: 1.6;
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        .email {
+            margin-bottom: 11px;
+        }
+        .phone {
+            margin-bottom: 20px;
+        }
+        .socials {
+            img {
+                margin-right: 15px;
+            }
+        }
+    }
+    &__copyright {
+        @extend %regular-12;
+    }
+}

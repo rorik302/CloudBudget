@@ -22,7 +22,7 @@
   font-style: normal;
 }
 
-.features__card-text, .technology__card-text {
+.features__card-text, .technology__card-text, .footer__card-body, .footer__copyright {
   font-family: "Lato Regular", sans-serif;
   font-size: 12px;
 }
@@ -57,7 +57,7 @@ button, .menu__link, .about__text, .about__link, .benefits__description, .contac
   font-size: 12px;
 }
 
-.navbar__brand-text, .features__card-title, .technology__card-title {
+.navbar__brand-text, .features__card-title, .technology__card-title, .footer__card-title {
   font-family: "Lato Bold", sans-serif;
   font-size: 18px;
 }
@@ -554,5 +554,84 @@ main * {
 .contact__form-submit:hover {
   background-color: transparent;
   color: #ed4c5c;
+}
+
+.footer {
+  padding: 0 85px;
+  background-color: #fafafa;
+}
+
+.footer * {
+  color: #101010;
+  font-style: normal;
+}
+
+.footer__inner {
+  padding: 85px 0;
+}
+
+.footer__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 90px;
+}
+
+.footer__card {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer__card:first-child {
+  padding-left: 0;
+}
+
+.footer__card:last-child {
+  padding-right: 0;
+}
+
+.footer__card-header {
+  padding-bottom: 33px;
+}
+
+.footer__card-body address {
+  line-height: 1.5;
+}
+
+.footer__services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__link {
+  text-transform: capitalize;
+  line-height: 1.6;
+}
+
+.footer__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__contacts .email {
+  margin-bottom: 11px;
+}
+
+.footer__contacts .phone {
+  margin-bottom: 20px;
+}
+
+.footer__contacts .socials img {
+  margin-right: 15px;
 }
 /*# sourceMappingURL=styles.css.map */
