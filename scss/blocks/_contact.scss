@@ -1,0 +1,71 @@
+.contact {
+    padding: 115px 0 120px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        width: 40%;
+        padding-left: 12px;
+    }
+    &__right {
+        width: 50%;
+    }
+
+    &__title {
+        @extend %semi-36;
+        margin-bottom: 50px;
+    }
+    &__text {
+        @extend %regular-14;
+    }
+    &__form {
+        .row {
+            display: flex;
+            .contact__form-field {
+                margin: 0 15px 24px;
+                &:first-child {
+                    margin-left: 0;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        &-field {
+            width: 100%;
+            margin-bottom: 24px;
+            padding: 20px 0 20px 30px;
+            border: 1px solid #333333;
+            border-radius: 6px;
+            @extend %regular-16;
+            color: rgba(#132743, 0.5);
+            outline: none;
+            &::placeholder {
+                color: rgba(#132743, 0.5);
+            }
+            &:last-child {
+                margin-bottom: 27px;
+            }
+            &.select {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                background: url("../../icons/ChevronDown\(E70D\).svg") no-repeat;
+                background-size: 14px;
+                background-position: calc(100% - 26px);
+            }
+        }
+        &-submit {
+            padding: 16px 34px;
+            background-color: #ed4c5c;
+            color: #ffffff;
+            border: 3px solid #ed4c5c;
+            @extend %regular-14;
+            &:hover {
+                background-color: transparent;
+                color: #ed4c5c;
+            }
+        }
+    }
+}
