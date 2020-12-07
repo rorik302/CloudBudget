@@ -3,18 +3,34 @@
     &__inner {
         display: flex;
         justify-content: space-between;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            text-align: center;
+        }
     }
     &__left {
         width: 40%;
         padding-left: 12px;
+        @media (max-width: 768px) {
+            width: auto;
+            padding: 0;
+            margin: 0 40px 40px;
+        }
     }
     &__right {
         width: 50%;
+        @media (max-width: 768px) {
+            width: auto;
+            margin: 0 50px;
+        }
     }
 
     &__title {
         @extend %semi-36;
         margin-bottom: 50px;
+        @media (max-width: 768px) {
+            margin-bottom: 30px;
+        }
     }
     &__text {
         @extend %regular-14;

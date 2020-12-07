@@ -6,16 +6,34 @@
     background-color: #ed4c5c;
     &__inner {
         display: flex;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            text-align: center;
+            margin: 0 40px;
+        }
     }
     &__left {
         padding-right: 15px;
         width: 42%;
+        @media (max-width: 768px) {
+            width: 100%;
+            margin-bottom: 40px;
+        }
     }
     &__right {
         padding-left: 15px;
         width: 58%;
         display: flex;
         justify-content: center;
+        @media (max-width: 768px) {
+            width: 70%;
+            margin: 0 auto;
+            padding-left: 0;
+        }
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
     }
     &__title {
         @extend %semi-36;
@@ -27,10 +45,16 @@
         text-align: justify;
         line-height: 1.4;
         margin: 40px 0;
+        @media (max-width: 768px) {
+            text-align: center;
+        }
     }
     &__systems {
         display: flex;
         align-items: center;
+        @media (max-width: 768px) {
+            justify-content: center;
+        }
         img {
             margin-right: 26px;
         }
