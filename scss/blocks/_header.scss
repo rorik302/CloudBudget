@@ -21,13 +21,16 @@
     position: relative;
     z-index: 1;
     color: #ffffff;
-    width: 600px;
+    width: auto;
     text-align: center;
     margin: 180px auto;
     &__title {
         @extend %bold-72;
         text-transform: uppercase;
         letter-spacing: 5px;
+        @media (max-width: 768px) {
+            font-size: 56px;
+        }
     }
     &__description {
         @extend %semi-24;

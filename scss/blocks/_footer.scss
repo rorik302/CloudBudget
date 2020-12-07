@@ -14,12 +14,12 @@
     }
     &__card {
         width: 25%;
-        padding: 0 15px;
+        margin: 0 15px;
         &:first-child {
-            padding-left: 0;
+            margin-left: 0;
         }
         &:last-child {
-            padding-right: 0;
+            margin-right: 0;
         }
         &-header {
             padding-bottom: 33px;
@@ -31,6 +31,13 @@
             @extend %regular-12;
             address {
                 line-height: 1.5;
+            }
+            .pays {
+                img {
+                    height: 30px;
+                    object-fit: contain;
+                    width: 100%;
+                }
             }
         }
     }
